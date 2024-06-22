@@ -516,7 +516,7 @@ class _RenderState extends State<Render> with WidgetsBindingObserver {
     // Gets called when application has been closed/paused and is back to normal
     // [Issue fix]: https://github.com/polarby/render/issues/11#issuecomment-1492948345
     if (state == AppLifecycleState.detached ||
-        state == AppLifecycleState.paused ||
+        // state == AppLifecycleState.paused ||
         state == AppLifecycleState.inactive) {
       final numberOfSessions = widget.controller?._activeSessions.length ?? 0;
       for (int i = 0; i < numberOfSessions; i++) {
